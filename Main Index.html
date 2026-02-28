@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Advisor AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Career Advisor AI</h1>
+    <p>Answer a few questions and find the best career for you!</p>
+
+    <div id="questions">
+        <label>Do you like Math? 
+            <select id="math">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </label>
+
+        <label>Do you enjoy Art? 
+            <select id="art">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </label>
+
+        <label>Do you like working with Technology? 
+            <select id="tech">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </label>
+
+        <button onclick="suggestCareer()">Get Career Suggestion</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
